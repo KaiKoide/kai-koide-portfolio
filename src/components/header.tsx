@@ -1,6 +1,6 @@
 export default function Header() {
 	return (
-		<div className="navbar bg-indigo-100">
+		<div className="navbar bg-blue-100">
 			<div className="flex-1">
 				<a className="btn btn-ghost text-xl">daisyUI</a>
 			</div>

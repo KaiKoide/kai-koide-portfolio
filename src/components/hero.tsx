@@ -13,8 +13,20 @@ export default function Hero() {
 			<Header />
 			<div className="h-screen flex flex-col justify-center items-center">
 				<Image src={Logo} alt="logo image" />
-				<h2 className="rationale.className">Kai Koide</h2>
-				<h3>Front-end Developer</h3>
+				<div>
+					<div>
+						<h3 className="rationale.className text-6xl capitalize">hello,</h3>
+						<h2 className="rationale.className text-8xl ">
+							I am
+							<span className="text-indigo-500 capitalize"> kai koide</span>
+						</h2>
+					</div>
+					<div>
+						<h3 className="rationale.className text-6xl capitalize">
+							front-end Developer
+						</h3>
+					</div>
+				</div>
 				<Button message={"GET STARTED"} />
 			</div>
 		</>
