@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Hero from "@/components/hero";
-import Card from "@/components/ui/card";
 import About from "@/components/about";
+import Projects from "@/components/projects";
 
 export default function Home() {
 	return (
-		<div className="text-[#333333]">
+		<div>
 			<Hero />
 			<About />
-			{/* <Card /> */}
+			<Projects />
 		</div>
 	);
 }
