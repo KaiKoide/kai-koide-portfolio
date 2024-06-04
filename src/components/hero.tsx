@@ -12,7 +12,7 @@ export default function Hero() {
 		<>
 			<Header />
 			<div className="h-screen flex flex-col justify-center items-center">
-				<Image src={Logo} alt="logo image" />
+				<Image src={Logo} alt="logo image" width={300} height={300} />
 				<div>
 					<div>
 						<h3 className="rationale.className text-6xl capitalize">hello,</h3>

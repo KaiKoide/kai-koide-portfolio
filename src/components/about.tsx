@@ -30,7 +30,7 @@ export default function About() {
 						ideas proposed by others, fostering teamwork and cooperation.
 					</p>
 				</div>
-				<Image src={Logo} alt="logo image" />
+				<Image src={Logo} alt="logo image" width={300} height={300} />
 			</div>
 
 			<h3 className="uppercase text-5xl">skills</h3>
