@@ -6,7 +6,7 @@ import { FlipWords } from "./flip-words";
 export function HeroHighlightText() {
 	const words = ["kai", "front-end-developer"];
 	return (
-		<div className="flex flex-col justify-start items-start w-screen z-50">
+		<div className="flex flex-col justify-start items-start w-screen z-40">
 			<motion.h1
 				initial={{
 					opacity: 0,

@@ -8,7 +8,7 @@ import { Boxes } from "../ui/background-boxes";
 
 export default function Hero() {
 	return (
-		<>
+		<div className="home">
 			<Header />
 			<div className="h-screen relative w-full overflow-hidden  flex flex-col items-center justify-center rounded-lg">
 				<div className="absolute inset-0 w-full h-full  z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
@@ -19,11 +19,11 @@ export default function Hero() {
 					alt="logo image"
 					width={300}
 					height={300}
-					className="z-50"
+					className="z-40"
 				/>
 				<HeroHighlightText />
 				<Button message={"GET STARTED"} />
 			</div>
-		</>
+		</div>
 	);
 }

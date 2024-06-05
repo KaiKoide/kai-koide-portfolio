@@ -10,7 +10,10 @@ export default function About() {
 	const skillTypes: SkillType[] = ["Front End", "Back End", "Dev Tools"];
 
 	return (
-		<div className="w-4/5 flex flex-col items-center justify-center m-auto mt-10 lg:mt-20 gap-y-10">
+		<div
+			id="about"
+			className="w-4/5 flex flex-col items-center justify-center m-auto mt-10 lg:mt-20 gap-y-10"
+		>
 			<h2 className="text-6xl uppercase">about me</h2>
 			<div className="flex">
 				<div className="flex flex-col gap-y-10">
