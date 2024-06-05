@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({
 	website,
 }) => {
 	return (
-		<div className="group relative block">
+		<div className="group relative block shadow-xl">
 			<a href={website || "#"} className="relative block">
 				<div className="relative h-[350px] sm:h-[450px]">
 					<Image
