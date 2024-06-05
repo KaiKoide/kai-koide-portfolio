@@ -1,6 +1,7 @@
 interface ButtonProp {
 	message: string;
 }
+
 export default function Button({ message }: ButtonProp) {
 	return (
 		<button
