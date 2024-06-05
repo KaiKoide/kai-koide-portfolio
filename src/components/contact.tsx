@@ -1,14 +1,46 @@
 import ContactList from "./contactList";
 import { contactsData } from "@/data/contactData";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 export default function Contact() {
+	const words = [
+		{
+			text: "If",
+		},
+		{
+			text: "You're",
+		},
+		{
+			text: "interested",
+		},
+		{
+			text: "in",
+		},
+		{
+			text: "or",
+		},
+		{
+			text: "you",
+		},
+		{
+			text: "have",
+		},
+		{
+			text: "any",
+		},
+		{
+			text: "questions,",
+		},
+		{
+			text: "get in touch with me!",
+			className: "text-blue-500 dark:text-blue-500",
+		},
+	];
+
 	return (
 		<div className="w-4/5 m-auto mt-20 flex flex-col justify-center items-center gap-16">
 			<h2 className="uppercase text-5xl">contact me</h2>
-			<p className="text-xl">
-				If you&#39;re interested in or you have any question, get in touch with
-				me!
-			</p>
+			<TypewriterEffectSmooth words={words} />
 			<ContactList contacts={contactsData} />
 		</div>
 	);
