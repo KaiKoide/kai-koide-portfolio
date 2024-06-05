@@ -1,6 +1,6 @@
-import ContactList from "./contactList";
+import ContactList from "../contactList";
 import { contactsData } from "@/data/contactData";
-import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 
 export default function Contact() {
 	const words = [

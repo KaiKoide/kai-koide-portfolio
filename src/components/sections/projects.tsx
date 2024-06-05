@@ -1,5 +1,5 @@
-import Card from "./ui/card";
-import ProjectList from "./projectList";
+import Card from "../ui/card";
+import ProjectList from "../projectList";
 import { projects } from "@/data/projectData";
 
 export default function Projects() {

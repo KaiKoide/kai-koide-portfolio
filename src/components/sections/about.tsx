@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import SkillIcons from "./ui/skills";
+import SkillIcons from "../ui/skills";
 import type { SkillType } from "@/util/types/skillType";
-import Logo from "../../public/images/person-circle-outline.svg";
-import EffectedText from "./effectText";
+import Profile from "../../../public/images/person-circle-outline.svg";
+import EffectedText from "../effectText";
 import { aboutData } from "@/data/aboutData";
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
 					<EffectedText words={aboutData.description1} />
 					<EffectedText words={aboutData.description2} />
 				</div>
-				<Image src={Logo} alt="logo image" width={300} height={300} />
+				<Image src={Profile} alt="profile image" width={300} height={300} />
 			</div>
 
 			<h3 className="uppercase text-5xl">skills</h3>

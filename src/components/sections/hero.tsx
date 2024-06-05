@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import Header from "./header";
-import Button from "./ui/button";
-import Logo from "../../public/logo.svg";
-import { HeroHighlightText } from "./heroHighlight";
-import { Boxes } from "./ui/background-boxes";
+import Header from "../ui/header";
+import Button from "../ui/button";
+import Logo from "../../../public/logo.svg";
+import { HeroHighlightText } from "../heroHighlight";
+import { Boxes } from "../ui/background-boxes";
 
 export default function Hero() {
 	return (
