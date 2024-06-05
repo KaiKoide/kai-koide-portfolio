@@ -33,7 +33,7 @@ export default function Contact() {
 		},
 		{
 			text: "get in touch with me!",
-			className: "text-blue-500 dark:text-blue-500",
+			className: "text-indigo-400 dark:text-indigo-400",
 		},
 	];
 

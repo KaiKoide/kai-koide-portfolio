@@ -5,7 +5,7 @@ import { Link as Scroll } from "react-scroll";
 
 export default function Header() {
 	return (
-		<div className="flex items-center justify-center bg-blue-100 fixed top-5 inset-x-0 max-w-2xl mx-auto z-50 py-2 rounded-full">
+		<div className="flex items-center justify-center bg-gradient-to-r from-indigo-300 to-purple-300 fixed top-5 inset-x-0 max-w-2xl mx-auto z-50 py-2 rounded-full">
 			<div className="flex-none">
 				<ul className="menu menu-horizontal px-1">
 					<li>
