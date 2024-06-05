@@ -38,7 +38,7 @@ export default function Contact() {
 	];
 
 	return (
-		<div className="w-4/5 m-auto mt-20 flex flex-col justify-center items-center gap-16">
+		<div className="w-4/5 m-auto mt-10 lg:mt-20 flex flex-col justify-center items-center gap-16">
 			<h2 className="uppercase text-5xl">contact me</h2>
 			<TypewriterEffectSmooth words={words} />
 			<ContactList contacts={contactsData} />

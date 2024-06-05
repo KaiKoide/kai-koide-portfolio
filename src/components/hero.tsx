@@ -5,7 +5,6 @@ import Button from "./ui/button";
 import Logo from "../../public/logo.svg";
 import { HeroHighlightText } from "./heroHighlight";
 import { Boxes } from "./ui/background-boxes";
-import { cn } from "@/util/cn";
 
 export default function Hero() {
 	return (
