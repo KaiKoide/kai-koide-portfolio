@@ -5,10 +5,7 @@ import { Link as Scroll } from "react-scroll";
 
 export default function Header() {
 	return (
-		<div className="navbar bg-blue-100 fixed z-50">
-			<div className="flex-1">
-				<a className="btn btn-ghost text-xl">daisyUI</a>
-			</div>
+		<div className="flex items-center justify-center bg-blue-100 fixed top-5 inset-x-0 max-w-2xl mx-auto z-50 py-2 rounded-full">
 			<div className="flex-none">
 				<ul className="menu menu-horizontal px-1">
 					<li>
@@ -16,7 +13,7 @@ export default function Header() {
 							to="home"
 							smooth={true}
 							duration={600}
-							className="capitalize"
+							className="capitalize text-xl font-bold"
 						>
 							home
 						</Scroll>
@@ -26,8 +23,8 @@ export default function Header() {
 							to="about"
 							smooth={true}
 							duration={600}
-							offset={-100}
-							className="capitalize"
+							offset={-120}
+							className="capitalize text-xl font-bold"
 						>
 							about
 						</Scroll>
@@ -37,8 +34,8 @@ export default function Header() {
 							to="projects"
 							smooth={true}
 							duration={600}
-							offset={-100}
-							className="capitalize"
+							offset={-120}
+							className="capitalize text-xl font-bold"
 						>
 							projects
 						</Scroll>
@@ -48,7 +45,7 @@ export default function Header() {
 							to="contact"
 							smooth={true}
 							duration={600}
-							className="capitalize"
+							className="capitalize text-xl font-bold"
 						>
 							contact
 						</Scroll>
