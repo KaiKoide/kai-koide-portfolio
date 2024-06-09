@@ -6,7 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-dark-rgb: 40, 40, 40;
   --text-base: 51,51,51;
+  --text-base-dark: 219,210,195;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +32,13 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-comfortaa);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: rgb(var(--text-base-dark));
+    background-color: rgb(var(--background-dark-rgb));
+  }
 }
 
 @layer utilities {

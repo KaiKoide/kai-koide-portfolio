@@ -23,7 +23,7 @@ export default function Hero() {
 					className="z-40"
 				/>
 				<HeroHighlightText />
-				<Button message={"GET STARTED"} />
+				<Button message={"RESUME"} />
 			</div>
 		</div>
 	);
