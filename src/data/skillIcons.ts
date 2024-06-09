@@ -6,6 +6,7 @@ import {
 	FaReact,
 	FaNodeJs,
 	FaGitAlt,
+	FaPhp,
 } from "react-icons/fa";
 import {
 	SiJavascript,
@@ -133,6 +134,11 @@ export const backEnd: Skill[] = [
 		id: 10,
 		icon: SiSupabase,
 		text: "Supabase",
+	},
+	{
+		id: 11,
+		icon: FaPhp,
+		text: "PHP",
 	},
 ];
 
