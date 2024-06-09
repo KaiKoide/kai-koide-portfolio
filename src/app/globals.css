@@ -37,7 +37,10 @@ h1, h2, h3, h4 {
 @media (prefers-color-scheme: dark) {
   body {
     color: rgb(var(--text-base-dark));
-    background-color: rgb(var(--background-dark-rgb));
+    background: rgb(var(--background-dark-rgb));
+  }
+  .effect-text {
+    color: rgb(var(--text-base-dark));
   }
 }
 

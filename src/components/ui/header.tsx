@@ -13,7 +13,7 @@ export default function Header() {
 							to="home"
 							smooth={true}
 							duration={600}
-							className="capitalize text-xl font-bold"
+							className="capitalize text-xl font-bold text-neutral-900"
 						>
 							home
 						</Scroll>
@@ -24,7 +24,7 @@ export default function Header() {
 							smooth={true}
 							duration={600}
 							offset={-120}
-							className="capitalize text-xl font-bold"
+							className="capitalize text-xl font-bold text-neutral-900"
 						>
 							about
 						</Scroll>
@@ -35,7 +35,7 @@ export default function Header() {
 							smooth={true}
 							duration={600}
 							offset={-120}
-							className="capitalize text-xl font-bold"
+							className="capitalize text-xl font-bold text-neutral-900"
 						>
 							projects
 						</Scroll>
@@ -45,7 +45,7 @@ export default function Header() {
 							to="contact"
 							smooth={true}
 							duration={600}
-							className="capitalize text-xl font-bold"
+							className="capitalize text-xl font-bold text-neutral-900"
 						>
 							contact
 						</Scroll>

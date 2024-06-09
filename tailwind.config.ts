@@ -19,6 +19,14 @@ const config: Config = {
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
+			color: {
+				primary: {
+					DEFAULT: "rgb(var(--text-base))",
+				},
+				dark: {
+					DEFAULT: "rgb(var(--text-base-dark))",
+				},
+			},
 		},
 	},
 	plugins: [
@@ -40,9 +48,7 @@ const config: Config = {
 			);
 		},
 	],
-	daisyui: {
-		themes: false,
-	},
+	daisyui: {},
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
