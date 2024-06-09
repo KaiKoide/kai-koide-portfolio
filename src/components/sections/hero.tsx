@@ -34,7 +34,7 @@ export default function Hero() {
 	return (
 		<div className="home flex flex-col items-center">
 			<Header />
-			<div className="h-screen relative w-full overflow-hidden  flex flex-col items-center justify-center rounded-lg">
+			<div className="h-screen relative w-full overflow-hidden  flex flex-col items-center justify-center rounded-lg pt-40">
 				<div className="absolute inset-0 w-full h-full  z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 				<Boxes />
 				<Image

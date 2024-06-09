@@ -12,7 +12,7 @@ export default function About() {
 	return (
 		<div
 			id="about"
-			className="w-4/5 flex flex-col items-center justify-center m-auto mt-10 lg:mt-20 gap-y-10"
+			className="w-4/5 flex flex-col items-center justify-center m-auto mt-20 lg:mt-40 gap-y-10"
 		>
 			<h2 className="text-6xl uppercase">about me</h2>
 			<div className="flex">
@@ -23,7 +23,7 @@ export default function About() {
 				<Image src={Profile} alt="profile image" width={300} height={300} />
 			</div>
 
-			<h3 className="uppercase text-5xl">skills</h3>
+			<h3 className="uppercase text-5xl mt-20">skills</h3>
 			<div className="flex flex-col gap-y-10">
 				{skillTypes.map((type) => (
 					<SkillIcons key={type} type={type} />
