@@ -25,6 +25,7 @@ import {
 	SiGithub,
 	SiPostman,
 	SiFigma,
+	SiBun,
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiMysql } from "react-icons/di";
@@ -162,5 +163,10 @@ export const devTools: Skill[] = [
 		id: 4,
 		icon: SiFigma,
 		text: "Figma",
+	},
+	{
+		id: 5,
+		icon: SiBun,
+		text: "Bun",
 	},
 ];
