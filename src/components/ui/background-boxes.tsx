@@ -48,7 +48,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
 								transition: { duration: 2 },
 							}}
 							key={`col${j}`}
-							className="w-16 h-8  border-r border-t border-slate-300 relative"
+							className="w-16 h-8  border-r border-t border-slate-300 relative background-boxes"
 						>
 							{j % 2 === 0 && i % 2 === 0 ? (
 								// biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
@@ -58,7 +58,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
 									viewBox="0 0 24 24"
 									strokeWidth="1.5"
 									stroke="currentColor"
-									className="absolute h-6 w-10 -top-[14px] -left-[22px] text-slate-400 stroke-[1px] pointer-events-none"
+									className="absolute h-6 w-10 -top-[14px] -left-[22px] text-slate-400 stroke-[1px] pointer-events-none background-boxes"
 								>
 									<path
 										strokeLinecap="round"

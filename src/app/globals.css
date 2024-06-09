@@ -42,6 +42,10 @@ h1, h2, h3, h4 {
   .effect-text {
     color: rgb(var(--text-base-dark));
   }
+  .background-boxes {
+    border-color: rgb(51 65 85);
+    color: rgb(51 65 85);
+  }
 }
 
 @layer utilities {
