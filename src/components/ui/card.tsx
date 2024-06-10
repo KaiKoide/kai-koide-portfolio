@@ -22,26 +22,26 @@ const Card: React.FC<CardProps> = ({
 }) => {
 	return (
 		<div className="group relative block shadow-xl">
-			<a href={website || "#"} className="relative block">
-				<div className="relative h-[350px] sm:h-[450px]">
+			{/* <div className="relative block"> */}
+			<div className="relative h-[350px] sm:h-[450px]">
+				<Image
+					src={images[0]}
+					width={1920}
+					height={1080}
+					alt={title}
+					className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-500"
+				/>
+				{images[1] && (
 					<Image
-						src={images[0]}
+						src={images[1]}
 						width={1920}
 						height={1080}
 						alt={title}
-						className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0 transition-opacity duration-500"
+						className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
 					/>
-					{images[1] && (
-						<Image
-							src={images[1]}
-							width={1920}
-							height={1080}
-							alt={title}
-							className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-						/>
-					)}
-				</div>
-			</a>
+				)}
+			</div>
+			{/* </div> */}
 
 			<div className="absolute inset-0 flex flex-col items-start justify-end p-6 bg-black/30">
 				<h3 className="text-xl font-medium text-white">{title}</h3>
@@ -52,14 +52,14 @@ const Card: React.FC<CardProps> = ({
 						<Badge message={item} key={index} />
 					))}
 				</div>
-				<a
+				{/* <a
 					href={github}
 					target="_blank"
 					rel="noopener noreferrer"
 					className="w-full"
-				>
-					<Button message="Github" />
-				</a>
+				> */}
+				<Button message="Github" />
+				{/* </a> */}
 			</div>
 		</div>
 	);
