@@ -1,5 +1,5 @@
 export interface ParamProp {
-	param: {
+	params: {
 		id: string;
 	};
 }
