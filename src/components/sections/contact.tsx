@@ -8,7 +8,7 @@ export default function Contact() {
 			text: "If",
 		},
 		{
-			text: "You're",
+			text: "you're",
 		},
 		{
 			text: "interested",
