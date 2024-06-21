@@ -1,9 +1,17 @@
 "use client";
+import Image from "next/image";
 import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 
-export function EmblaCarousel() {
+import type { ProjectType } from "@/util/types/projectType";
+
+interface CarouselProps {
+	project: ProjectType;
+}
+
+export function EmblaCarousel({ project }: CarouselProps) {
 	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
 	const scrollPrev = useCallback(() => {
@@ -16,19 +24,28 @@ export function EmblaCarousel() {
 
 	return (
 		<>
-			<div className="embla bg-blue-400 h-20" ref={emblaRef}>
-				<div className="embla__container">
-					<div className="embla__slide">Slide 1</div>
-					<div className="embla__slide">Slide 2</div>
-					<div className="embla__slide">Slide 3</div>
+			<div className="h-full overflow-hidden shadow-lg" ref={emblaRef}>
+				<div className="flex ">
+					{project.images.map((image, index) => (
+						<Image
+							key={index}
+							className="flex-shrink-0 flex-grow-0 basis-full min-w-0"
+							src={image}
+							alt="slide"
+							width={1920}
+							height={1080}
+						/>
+					))}
 				</div>
 			</div>
-			<button type="button" className="embla__prev" onClick={scrollPrev}>
-				Prev
-			</button>
-			<button type="button" className="embla__next" onClick={scrollNext}>
-				Next
-			</button>
+			<div className="flex gap-3 my-5 justify-center">
+				<button type="button" onClick={scrollPrev}>
+					<CircleChevronLeft className="text-3xl" />
+				</button>
+				<button type="button" onClick={scrollNext}>
+					<CircleChevronRight className="text-3xl" />
+				</button>
+			</div>
 		</>
 	);
 }

@@ -10,7 +10,14 @@ export default function ProjectsModal({ params }: ParamProp) {
 	const project = projects.find(
 		(project) => project.id === Number.parseInt(params.id, 10),
 	);
-	console.log("modal project:", project?.id);
+
+	if (!project) {
+		return (
+			<Modal>
+				<div>Project not found</div>
+			</Modal>
+		);
+	}
 
 	return (
 		<Modal>
@@ -18,7 +25,7 @@ export default function ProjectsModal({ params }: ParamProp) {
 				<h2 className="m-auto text-center text-3xl font-extrabold mb-10">
 					{project?.title}
 				</h2>
-				<EmblaCarousel />
+				<EmblaCarousel project={project} />
 				<p>{project?.overview}</p>
 				<h3 className="capitalize font-bold text-2xl pt-10">tech stack</h3>
 				<div className="flex flex-wrap gap-3 w-full my-5">
