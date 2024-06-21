@@ -1,9 +1,10 @@
+import { FaGithub } from "react-icons/fa";
+import { CgBrowser } from "react-icons/cg";
+
 import Badge from "@/components/ui/badge";
 import { Modal } from "./modal";
 import { projects } from "@/data/projectData";
 import type { ParamProp } from "@/util/types/paramType";
-import type { ProjectType } from "@/util/types/projectType";
-import { FaGithub } from "react-icons/fa";
 import { EmblaCarousel } from "@/components/ui/carousel";
 
 export default function ProjectsModal({ params }: ParamProp) {
@@ -33,7 +34,7 @@ export default function ProjectsModal({ params }: ParamProp) {
 						<Badge message={item} key={index} />
 					))}
 				</div>
-				<div className="pt-5">
+				<div className="pt-5 flex gap-4 justify-center">
 					<a
 						href={project?.github}
 						target="_blank"
@@ -42,6 +43,16 @@ export default function ProjectsModal({ params }: ParamProp) {
 					>
 						<FaGithub size={30} />
 					</a>
+					{project.website && (
+						<a
+							href={project?.website}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="block"
+						>
+							<CgBrowser size={30} />
+						</a>
+					)}
 				</div>
 			</div>
 		</Modal>
