@@ -46,20 +46,6 @@ const Card: React.FC<CardProps> = ({
 			<div className="absolute inset-0 flex flex-col items-start justify-end p-6 bg-black/30">
 				<h3 className="text-xl font-medium text-white">{title}</h3>
 				<p className="mt-1.5 text-sm text-white">{overview}</p>
-				<div className="flex flex-wrap gap-3 w-full my-5">
-					{tech.map((item, index) => (
-						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-						<Badge message={item} key={index} />
-					))}
-				</div>
-				{/* <a
-					href={github}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="w-full"
-				> */}
-				<Button message="Github" />
-				{/* </a> */}
 			</div>
 		</div>
 	);
