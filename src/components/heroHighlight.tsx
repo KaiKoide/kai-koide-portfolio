@@ -20,12 +20,12 @@ export function HeroHighlightText() {
 					duration: 0.5,
 					ease: [0.4, 0.0, 0.2, 1],
 				}}
-				className="text-2xl px-4 mt-8 md:text-4xl lg:text-6xl font-bold text-neutral-700 dark:text-white leading-relaxed lg:leading-snug text-center mx-auto effect-text"
+				className="px-4 mt-8 text-2xl md:text-4xl lg:text-6xl font-bold text-neutral-700 dark:text-white leading-relaxed lg:leading-snug text-center mx-auto effect-text"
 			>
 				Hello,
-				<div className="flex gap-10 items-center mb-8">
-					<h2 className="text-6xl">I&apos;m </h2>
-					<Highlight className="text-black dark:text-white capitalize text-6xl">
+				<div className="flex gap-3 md:gap-10 items-center mb-8 justify-center">
+					<h2 className="text-2xl md:text-4xl lg:text-6xl">I&apos;m </h2>
+					<Highlight className="text-black dark:text-white capitalize text-lg md:text-4xl lg:text-6xl">
 						<FlipWords words={words} />
 					</Highlight>
 					<br />

@@ -27,7 +27,7 @@ export function Modal({ children }: { children: React.ReactNode }) {
 	}
 
 	return createPortal(
-		<div className="absolute bg-black flex z-50 shadow-lg">
+		<div className="absolute bg-black flex z-30 shadow-lg">
 			<dialog
 				ref={dialogRef}
 				className="relative rounded-md w-8/12 max-w-5xl p-9"

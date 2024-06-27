@@ -23,8 +23,8 @@ const SkillIcons: React.FC<SkillIconsProps> = ({ type }) => {
 
 	return (
 		<div className="flex items-center justify-center flex-col">
-			<h4 className="text-4xl mt-10 mb-7">{type}</h4>
-			<div className="flex items-center justify-center gap-5">
+			<h4 className="text-2xl md:text-3xl lg:text-4xl mt-10 mb-7">{type}</h4>
+			<div className="flex items-center justify-center gap-5 flex-wrap">
 				{skills.map((item) => (
 					<div
 						key={item.id}
