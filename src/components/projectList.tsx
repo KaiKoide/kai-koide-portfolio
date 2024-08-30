@@ -16,6 +16,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
 					<Card
 						title={project.title}
 						overview={project.overview}
+						description={project.description}
 						images={project.images}
 						tech={project.tech}
 						github={project.github}
