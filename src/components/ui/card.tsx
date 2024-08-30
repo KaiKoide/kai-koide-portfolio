@@ -6,6 +6,7 @@ import Button from "./button";
 interface CardProps {
 	title: string;
 	overview: string;
+	description: string;
 	images: string[];
 	tech: string[];
 	github: string;

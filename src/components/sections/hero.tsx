@@ -20,7 +20,7 @@ export default function Hero() {
 
 		setIsDarkMode(mediaQuery.matches);
 
-		const handleChange = (e) => {
+		const handleChange = (e: MediaQueryListEvent) => {
 			setIsDarkMode(e.matches);
 		};
 

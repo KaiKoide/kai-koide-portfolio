@@ -41,7 +41,7 @@ export default function ProjectsPage({ params }: ParamProp) {
 					{project?.title}
 				</h2>
 				<EmblaCarousel project={project} />
-				<p className="text-justify">{project?.overview}</p>
+				<p className="text-justify">{project?.description}</p>
 				<h3 className="capitalize font-bold text-2xl pt-10">tech stack</h3>
 				<div className="flex flex-wrap gap-3 w-full my-5">
 					{project?.tech.map((item, index) => (
