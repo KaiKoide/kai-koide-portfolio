@@ -34,13 +34,22 @@ export const projects: ProjectType[] = [
 		],
 		overview:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet arcu purus, et vestibulum tellus consectetur fermentum. Donec semper fringilla odio nec dapibus. Aliquam sit amet felis dolor.",
-		tech: ["Next.js", "TypeScript", "MapBox", "Tailwind CSS"],
+		tech: [
+			"Next.js",
+			"TypeScript",
+			"MapBox",
+			"Tailwind CSS",
+			"shadcn/ui",
+			"prisma",
+			"Neon",
+			"Auth.js",
+		],
 		website: "https://finding-free-meal-in-vancouver.vercel.app/",
 		github: "https://github.com/KaiKoide/finding-free-meal-in-vancouver",
 	},
 	{
 		id: 3,
-		title: "Portfolio site",
+		title: "Tascurator",
 		images: [
 			"/images/project3-1.webp",
 			"/images/project3-2.webp",
@@ -50,8 +59,21 @@ export const projects: ProjectType[] = [
 		],
 		overview:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet arcu purus, et vestibulum tellus consectetur fermentum. Donec semper fringilla odio nec dapibus. Aliquam sit amet felis dolor.",
-		tech: ["Next.js", "TailwindCSS", "TypeScript"],
+		tech: [
+			"Next.js",
+			"Tailwind CSS",
+			"TypeScript",
+			"Auth.js",
+			"shadcn/ui",
+			"React Hook Form",
+			"Tiptap",
+			"Hono",
+			"Zod",
+			"Prisma",
+			"Vercel Postgress",
+			"Docker",
+		],
 		website: "https://tascurator.com",
-		github: "https://github.com/KaiKoide/kai-koide-portfolio",
+		github: "https://github.com/Tascurator/tascurator-frontend",
 	},
 ];
