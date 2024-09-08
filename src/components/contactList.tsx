@@ -9,9 +9,11 @@ const ContactList: React.FC<ContactTypeProps> = ({ contacts }) => {
 		<div className="flex gap-10">
 			{contacts.map((contact) => (
 				<div key={contact.id}>
-					<a href={contact.href} target="_blank" rel="noopener noreferrer">
-						<contact.icon size={50} />
-					</a>
+					<div className="tooltip" data-tip={contact.name}>
+						<a href={contact.href} target="_blank" rel="noopener noreferrer">
+							<contact.icon size={50} />
+						</a>
+					</div>
 				</div>
 			))}
 		</div>
