@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import SkillIcons from "../ui/skills";
 import type { SkillType } from "@/util/types/skillType";
-import Profile from "../../../public/images/person-circle-outline.svg";
+import Profile from "../../../public/images/profile.webp";
 import EffectedText from "../effectText";
 import { aboutData } from "@/data/aboutData";
 
@@ -23,7 +23,7 @@ export default function About() {
 					height={300}
 					className="lg:order-2"
 				/>
-				<div className="flex flex-col gap-y-10 lg:order-1">
+				<div className="flex flex-col gap-y-10 lg:order-1 rounded">
 					<EffectedText words={aboutData.description1} />
 					<EffectedText words={aboutData.description2} />
 				</div>
