@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import SkillIcons from "../ui/skills";
 import type { SkillType } from "@/util/types/skillType";
-import Profile from "../../../public/images/person-circle-outline.svg";
+import Profile from "../../../public/images/profile.webp";
 import EffectedText from "../effectText";
 import { aboutData } from "@/data/aboutData";
 
