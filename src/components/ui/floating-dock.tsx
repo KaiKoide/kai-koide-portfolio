@@ -81,6 +81,7 @@ const FloatingDockMobile = ({
 				)}
 			</AnimatePresence>
 			<button
+				type="button"
 				onClick={() => setOpen(!open)}
 				className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
 			>

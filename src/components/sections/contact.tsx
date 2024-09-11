@@ -1,5 +1,4 @@
 import ContactList from "../contactList";
-import { contactsData } from "@/data/contactData";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 
 export default function Contact() {
@@ -43,7 +42,7 @@ export default function Contact() {
 			className="w-4/5 m-auto mt-20 lg:mt-40 flex flex-col justify-center items-center gap-16"
 		>
 			<h2 className="uppercase text-4xl md:text-5xl lg:text-6xl">contact me</h2>
-			<ContactList contacts={contactsData} />
+			<ContactList />
 			<TypewriterEffectSmooth
 				words={words}
 				className="hidden lg:flex lg:space-x-1 lg:my-6"

@@ -1,13 +1,9 @@
-import type { ContactType } from "@/util/types/contactType";
-import { FloatingDock } from "./ui/floating-dock";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
-interface ContactTypeProps {
-	contacts: ContactType[];
-}
+import { FloatingDock } from "./ui/floating-dock";
 
-const ContactList: React.FC<ContactTypeProps> = ({ contacts }) => {
+const ContactList = () => {
 	const links = [
 		{
 			title: "GitHub",
@@ -32,9 +28,10 @@ const ContactList: React.FC<ContactTypeProps> = ({ contacts }) => {
 			href: "mailto:k.koide.van24@gmail.com",
 		},
 	];
+
 	return (
 		<div className="flex gap-5">
-			<div className="flex items-center justify-center h-5 w-full">
+			<div className="flex items-center justify-center h-10 w-full">
 				<FloatingDock items={links} />
 			</div>
 		</div>
