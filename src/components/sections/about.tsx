@@ -3,7 +3,6 @@ import Image from "next/image";
 import SkillIcons from "../ui/skills";
 import type { SkillType } from "@/util/types/skillType";
 import Profile from "../../../public/images/profile.webp";
-import EffectedText from "../effectText";
 import { aboutData } from "@/data/aboutData";
 
 export default function About() {
@@ -24,8 +23,12 @@ export default function About() {
 					className="lg:order-2"
 				/>
 				<div className="flex flex-col gap-y-10 lg:order-1">
-					<EffectedText words={aboutData.description1} />
-					<EffectedText words={aboutData.description2} />
+					<p className="dark:text-white text-black md:text-xl leading-snug tracking-wide">
+						{aboutData.description1}
+					</p>
+					<p className="dark:text-white text-black md:text-xl leading-snug tracking-wide">
+						{aboutData.description2}
+					</p>
 				</div>
 			</div>
 
