@@ -63,6 +63,25 @@ Here are a few standout projects that you can explore:
 
 ## 📷 Screenshots
 
+### Portfolio
+<img src="./public/images/portfolio-1.webp" />
+<img src="./public/images/portfolio-2.webp" />
+<img src="./public/images/portfolio-3.webp" />
+
+### Medamayakey
+<img src="./public/images/project1-1.webp" />
+<img src="./public/images/project1-2.webp" />
+<img src="./public/images/project1-3.webp" />
+
+### Finding Free Meal in Vancouver
+<img src="./public/images/project2-1.webp" />
+<img src="./public/images/project2-2.webp" />
+<img src="./public/images/project2-3.webp" />
+
+### Tascurator
+<img src="./public/images/project3-1.webp" />
+<img src="./public/images/project3-2.webp" />
+<img src="./public/images/project3-5.webp" />
 
 ## 📫 Contact
 
