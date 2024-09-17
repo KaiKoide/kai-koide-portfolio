@@ -68,7 +68,6 @@ Here are a few standout projects that you can explore:
 <img src="./public/images/portfolio-3.webp" />
 
 ### Medamayakey
-<img src="./public/images/project1-1.webp" />
 <img src="./public/images/project1-2.webp" />
 <img src="./public/images/project1-3.webp" />
 
